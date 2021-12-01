@@ -23,14 +23,9 @@ try {
     for(let i = 0; i < splitData.length; i++) {
         let depthAdditionFirst = Number(splitData[i]) + Number(splitData[i+1]) + Number(splitData[i+2])
         let depthAdditionSecond= Number(splitData[i+1]) + Number(splitData[i+2]) + Number(splitData[i+3])
-
         if(depthAdditionFirst < depthAdditionSecond) {
             count = count + 1
-            console.log(count)
-        }
-
-
-        console.log(splitData[i], splitData[i+1], splitData[i+2], depthAdditionFirst, depthAdditionSecond, count)
+        };
     };
     console.log(count)
 } catch (error) {
